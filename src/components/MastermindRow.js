@@ -15,13 +15,10 @@ export default class MastermindRow extends PureComponent {
 
   componentDidUpdate = () => this.renderColorOnBox();
 
-  static getDerivedStateFromProps = ({ indexRow, indexRowToGuess }) => {
-    if (indexRow === indexRowToGuess) {
-      return { isRowToGuess: true };
-    } else {
-      return { isRowToGuess: false };
-    }
-  };
+  static getDerivedStateFromProps = ({ indexRow, indexRowToGuess }) =>
+    indexRow === indexRowToGuess
+      ? { isRowToGuess: true }
+      : { isRowToGuess: false };
 
   checkColorsCombination = () => {
     const { colorsToGuess, selectedColors } = this.props;

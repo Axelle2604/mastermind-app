@@ -1,7 +1,7 @@
 ## Project
 
 The real Mastermind game !
-Deployed project : [Mastermind](*soon*)
+Deployed project : [Mastermind](https://mastermind-app.netlify.com)
 
 ## How to launch the project
 

@@ -3,9 +3,9 @@ import { UserBox } from './styled-components/userBoxColorStyled';
 import PropTypes from 'prop-types';
 
 const UserBoxColor = ({ color, onClickUserColor }) => {
-  const onClickBox = color => onClickUserColor(color);
+  const onClickBox = () => onClickUserColor(color);
 
-  return <UserBox color={color} onClick={onClickBox.bind(this, color)} />;
+  return <UserBox color={color} onClick={onClickBox} />;
 };
 
 export default UserBoxColor;

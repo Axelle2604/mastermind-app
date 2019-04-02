@@ -17,7 +17,7 @@ class App extends PureComponent {
   changeGameState = (gameState, isWon) => {
     this.setState({
       stateGame: gameState,
-      isWon: isWon,
+      isWon,
     });
   };
 
